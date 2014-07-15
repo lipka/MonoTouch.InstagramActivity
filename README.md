@@ -1,6 +1,8 @@
 # MonoTouch.InstagramActivity
 
-A MonoTouch implementation of an Instagram share activity for iOS. Provides a UIActivity subclass that you can use to share photos and photo captions.
+A MonoTouch implementation of an Instagram share activity for iOS.
+
+Provides a UIActivity subclass that you can use to share photos and photo captions.
 
 ## Usage
 
@@ -13,7 +15,6 @@ var activity = new InstagramActivity (View);
 var activityItems = new NSObject[] { UIImage.FromBundle ("photo-to-share.jpg"), new NSString ("Optional image caption. #hashtag"), };
 var activityController = new UIActivityViewController (activityItems, new UIActivity[] { activity });
 PresentViewController (activityController, true, null);
-
 ```
 
 For more information see [Instagram's iPhone Hooks](http://instagram.com/developer/iphone-hooks/).
